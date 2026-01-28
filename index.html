@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mudavath Ajay Kumar Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<style>
+/* Reset & Global */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Roboto', sans-serif; color: #333; line-height: 1.6; background-color: #f9f9f9; scroll-behavior: smooth; }
+a { text-decoration: none; color: inherit; }
+
+/* Header / Hero */
+header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, #1e3c72, #2a5298); color: #fff; text-align: center; }
+header h1 { font-family: 'Montserrat', sans-serif; font-size: 3rem; margin-bottom: 10px; opacity: 0; transform: translateY(-20px); animation: fadeSlide 1s forwards 0.3s; }
+header p { font-size: 1.2rem; margin-bottom: 20px; opacity: 0; transform: translateY(-20px); animation: fadeSlide 1s forwards 0.6s; }
+header a.button { padding: 12px 30px; background-color: #ff9800; color: #fff; border-radius: 30px; font-weight: bold; transition: 0.3s; opacity: 0; transform: translateY(-20px); animation: fadeSlide 1s forwards 0.9s; }
+header a.button:hover { background-color: #e68900; }
+
+/* Sections */
+section { padding: 80px 20px; max-width: 1000px; margin: auto; }
+section h2 { font-family: 'Montserrat', sans-serif; font-size: 2rem; margin-bottom: 20px; color: #1e3c72; text-align: center; }
+section p { text-align: center; margin-bottom: 40px; }
+
+/* About Me */
+.about { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.about img { width: 150px; border-radius: 50%; margin-bottom: 20px; }
+
+/* Services */
+.services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.service-card { background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: 0.3s; text-align: center; opacity: 0; transform: translateY(20px); }
+.service-card h3 { margin-bottom: 15px; color: #2a5298; }
+.service-card p { font-size: 0.95rem; }
+.service-card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+
+/* Clients */
+.clients { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.client-card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); min-width: 200px; text-align: center; transition: 0.3s; opacity: 0; transform: translateY(20px); }
+.client-card:hover { transform: scale(1.05); }
+.client-card h4 { margin-bottom: 10px; color: #1e3c72; }
+
+/* Contact */
+.contact-form { max-width: 600px; margin: auto; display: flex; flex-direction: column; gap: 15px; opacity: 0; transform: translateY(20px); }
+.contact-form input, .contact-form textarea { padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; }
+.contact-form button { padding: 12px; border-radius: 30px; border: none; background-color: #ff9800; color: #fff; font-weight: bold; font-size: 1rem; cursor: pointer; transition: 0.3s; }
+.contact-form button:hover { background-color: #e68900; }
+
+/* Footer */
+footer { text-align: center; padding: 20px; background: #1e3c72; color: #fff; }
+
+/* Animations */
+@keyframes fadeSlide { to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<header>
+    <h1>Mudavath Ajay Kumar</h1>
+    <p>MBA | Business Content Writer | Video Editor | Recruitment & Business Development Specialist</p>
+    <a href="#contact" class="button">Hire Me</a>
+</header>
+
+<!-- About Me -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <img src="https://via.placeholder.com/150" alt="Mudavath Ajay Kumar">
+    <p>I am an MBA graduate with expertise in business content writing, video editing, business development, and recruitment support. I help startups and established businesses grow their brand, reach their audience, and find the right talent through professional, result-oriented work. I have successfully collaborated with multiple clients to solve marketing, sales, and recruitment challenges and support influencers in content creation and video editing.</p>
+</section>
+
+<!-- Services -->
+<section id="services">
+    <h2>Services</h2>
+    <div class="services">
+        <div class="service-card">
+            <h3>Business Content Writing</h3>
+            <p>Creating ad copies, social media posts, email campaigns, and blogs to engage audiences and generate leads.</p>
+        </div>
+        <div class="service-card">
+            <h3>Video Editing & Influencer Support</h3>
+            <p>Professional video editing and guidance for influencers to create engaging social media and promotional content.</p>
+        </div>
+        <div class="service-card">
+            <h3>Business Development & Lead Generation</h3>
+            <p>Helping startups with marketing strategies, sales planning, and actionable lead lists for growth.</p>
+        </div>
+        <div class="service-card">
+            <h3>Recruitment & Hiring Support</h3>
+            <p>Sourcing, screening, and shortlisting candidates while coordinating the recruitment process efficiently.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Clients -->
+<section id="clients">
+    <h2>Clients & Achievements</h2>
+    <div class="clients">
+        <div class="client-card">
+            <h4>Zaman IT Solution</h4>
+            <p>10+ candidates recruited, marketing & sales support</p>
+        </div>
+        <div class="client-card">
+            <h4>Leonine Consulting Services</h4>
+            <p>10 candidates sourced, campaigns delivered</p>
+        </div>
+        <div class="client-card">
+            <h4>Syncholnic Business Solution</h4>
+            <p>5 candidates, business development support</p>
+        </div>
+        <div class="client-card">
+            <h4>Evoscale</h4>
+            <p>7 candidates recruited, business & content support</p>
+        </div>
+        <div class="client-card">
+            <h4>Eagle Asquare Consulting Services</h4>
+            <p>5 candidates, content & video support</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    &copy; 2026 Mudavath Ajay Kumar | All Rights Reserved
+</footer>
+
+<script>
+// Fade in elements on scroll
+const faders = document.querySelectorAll('.service-card, .client-card, .contact-form');
+
+const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+const appearOnScroll = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) return;
+        entry.style.opacity = 1;
+        entry.style.transform = "translateY(0)";
+        observer.unobserve(entry);
+    });
+}, appearOptions);
+
+faders.forEach(fader => { appearOnScroll.observe(fader); });
+</script>
+
+</body>
+</html>
